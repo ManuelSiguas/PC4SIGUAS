@@ -40,7 +40,7 @@ sidebar = st.sidebar
 # Pero, a diferencia de st.markdown, el texto estará alineado a la izquierda y no podrás cambiar el color del texto.
 
 # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-st.markdown("<h1 style='text-align: center;'>Siguiendo a Siguas</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>SIGUIENDO A SIGUAS :3</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -60,7 +60,7 @@ col1, col2 = st.columns(2)
 # Las columnas creadas se asignan a las variables col1 y col2.
 
 # En la primera columna colocamos la imagen
-col1.image("Imagen_de_perfil.jpg", caption='Conocido en internet como Manulaxt Art', width=300)
+col1.image("foto.jpg", caption='Mi avatar', width=300)
 
 # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
 # La función image toma como primer argumento la ruta de la imagen que se va a mostrar. 
@@ -96,7 +96,7 @@ col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>
 # ¿Qué te gustaría hacer con la programación en el futuro? 
 
 # Agregamos un subtítulo
-st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻 en PENCOM :'3</h2>", unsafe_allow_html=True)
 
 # <h2 style='text-align: center;'>Mi experiencia aprendiendo a programar 💻</h2>: Esta es una cadena de código HTML.
 # La etiqueta <h2> se utiliza para el encabezado secundario de una página web.
@@ -134,12 +134,12 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 # unsafe_allow_html=True: Este es un argumento opcional en la función markdown.
 
 # Agregamos un video a la aplicación web ( menor a 20 MB)
-st.video("PC2_-_Ejercicio_5_Manuel_Siguas_Full HD 1080p_MEDIUM_FR30.mp4")
+st.video("pc3.mp4")
 # st.video("ppc-2024-1.mp4"): Esta línea está agregando un video a la aplicación web.
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/1CbCTv4EFV5G5XH7rOpIcPmjKr23Muojs/view?usp=drive_link" target="_blank"><button>Play al conocimiento</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/152MfCeko058XBWpDZcCWiVuVfICFaG14/view?usp=sharing" target="_blank"><button>Click para ver el mismo video de arriba pero en drive :V</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
@@ -151,7 +151,7 @@ st.markdown(enlace, unsafe_allow_html=True)
 
 
 # Agregamos un subtítulo en la barra lateral
-sidebar.markdown("<h1 style='text-align: center;'>Grafico y pienso</h1>", unsafe_allow_html=True)
+sidebar.markdown("<h1 style='text-align: center;'>Mis gráficos favoritos de las PCs</h1>", unsafe_allow_html=True)
 
 # <h1 style='text-align: center;'>Los análisis de Ellie</h1>: Esta es una cadena de código HTML.
 # La etiqueta <h1> se utiliza para el encabezado principal de una página web.
@@ -159,10 +159,10 @@ sidebar.markdown("<h1 style='text-align: center;'>Grafico y pienso</h1>", unsafe
 # El texto dentro de las etiquetas <h1> ("Los análisis de Ellie") es el contenido del encabezado.
 
 # Creamos una lista de gráficos
-graficos = ['¿Cómo le fue a la Vecchia Signora?', 'Milan vs Fiore', 'Palabras repetidas']
+graficos = ['¿Cómo le fue a la Vecchia Signora?', 'Goles promedio Milan vs. Fiore', 'Frecuencia de palabras']
 
 # Creamos un cuadro de selección en la barra lateral
-grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
+grafico_seleccionado = sidebar.selectbox('Selecciónese un gráfico 7u7', graficos)
 # El cuadro de selección se crea con la función selectbox.
 # El primer argumento es el texto que se muestra en el cuadro de selección.
 # El segundo argumento es una lista de opciones que se pueden seleccionar.
@@ -173,16 +173,16 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 
 # Mostramos el gráfico seleccionado
 if grafico_seleccionado == '¿Cómo le fue a la Vecchia Signora?':
-    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Cantidad de goles de la Juventus de local y visitante durante la Serie A 2022/23</div>", unsafe_allow_html=True)
-    sidebar.image("aisladas_base_datos.png", caption='descarga (2).png', width=500)
+    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Durante la temporada 2022/23 en la Serie A Italiana en cuanto a su cuota goleadora. Se muestran sus 38 goles en condición de local y sus 18 goles en condición de visitante</div>", unsafe_allow_html=True)
+    sidebar.image("vechia.png", caption='Vecchia Signora', width=500)
     pass
-elif grafico_seleccionado == 'Milan vs Fiore':
-    sidebar.markdown("<div style='text-align: justify'>Texto para la opción 2.</div>", unsafe_allow_html=True)
-    sidebar.image("lengua_familia_GB.png", caption='descarga (3).png', width=500)
+elif grafico_seleccionado == 'Goles promedio Milan vs. Fiore':
+    sidebar.markdown("<div style='text-align: justify'>El gráfico se encuentra una comparación entre el promedio de goles en condición de visitante entre el AC Milán y la Fiorentina, mostrando que ambos obtuvieron un 50%..</div>", unsafe_allow_html=True)
+    sidebar.image("promedio.png", caption='Milan vs Fiore Comparación', width=500)
     pass
-elif grafico_seleccionado == 'Palabras repetidas':
-    sidebar.markdown("<div style='text-align: justify'>Texto para la opción 3.</div>", unsafe_allow_html=True)
-    sidebar.image("mapa_familias_aisladas_S.jpg", caption='descarga (4).png', width=500)
+elif grafico_seleccionado == 'Frecuencia de palabras':
+    sidebar.markdown("<div style='text-align: justify'>Este gráfico se encarga de contabilizar y comparar la cantidad de veces en que se mencionó la palabra “paro”, “Dina”, “Bukele”, “delincuencia”, “criminales” y “ley” en un texto específico que se nos fue otorgado. Brindando como resultado que la palabra más mencionada fue “paro” con un total de 3 veces.</div>", unsafe_allow_html=True)
+    sidebar.image("palabras.png", caption='Mapa de las lenguas sudamericanas', width=500)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas': Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
